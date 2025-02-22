@@ -44,7 +44,8 @@ You’ll analyze a network packet capture file that contains traffic data relate
 
 ## Task 1: Explore data with Wireshark
 In this task, you must open a network packet capture file that contains data captured from a system that made web requests to a site. You need to open this data with Wireshark to get an overview of how the data is presented in the application.
-
+-![setting up wireshark](https://i.imgur.com/9O6EDc1.png)
+-![Explore Wireshark](https://i.imgur.com/TWnHucB.jpeg)
 **Question:** What is the protocol of the first packet in the list where the info column starts with the words 'Echo (ping) request'? 
 
 - **Options:**
