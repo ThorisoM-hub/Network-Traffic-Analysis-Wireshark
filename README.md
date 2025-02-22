@@ -44,8 +44,10 @@ You’ll analyze a network packet capture file that contains traffic data relate
 
 ## Task 1: Explore data with Wireshark
 In this task, you must open a network packet capture file that contains data captured from a system that made web requests to a site. You need to open this data with Wireshark to get an overview of how the data is presented in the application.
--![setting up wireshark](https://i.imgur.com/9O6EDc1.png)
--![Explore Wireshark](https://i.imgur.com/TWnHucB.jpeg)
+
+![setting up wireshark](https://i.imgur.com/9O6EDc1.png)
+
+![Explore Wireshark](https://i.imgur.com/TWnHucB.jpeg)
 **Question:** What is the protocol of the first packet in the list where the info column starts with the words 'Echo (ping) request'? 
 
 - **Options:**
@@ -58,6 +60,19 @@ In this task, you must open a network packet capture file that contains data cap
 
 ## Task 2: Apply a Basic Wireshark Filter and Inspect a Packet
 In this task, you’ll open a packet in Wireshark for more detailed exploration and filter the data to inspect the network layers and protocols contained in the packet.
+
+Enter the following filter for traffic associated with a specific IP address. Enter this into the Apply a display filter... text box immediately above the list of packets:
+
+ip.addr == 142.250.1.139
+
+Press ENTER or click the Apply display filter icon in the filter text box.
+The list of packets displayed is now significantly reduced and contains only packets where either the source or the destination IP address matches the address you entered. Now only two packet colors are used: light pink for ICMP protocol packets and light green for TCP (and HTTP, which is a subset of TCP) packets.
+
+Double-click the first packet that lists TCP as the protocol.
+This opens a packet details pane window:
+
+![setting up wireshark](https://i.imgur.com/isFPncm.jpeg)
+
 **Question:** What is the TCP destination port of this TCP packet? 
 
 - **Options:**
