@@ -59,6 +59,7 @@ In this task, you must open a network packet capture file that contains data cap
 ---
 
 ## Task 2: Apply a Basic Wireshark Filter and Inspect a Packet
+
 In this task, you’ll open a packet in Wireshark for more detailed exploration and filter the data to inspect the network layers and protocols contained in the packet.
 
 Enter the following filter for traffic associated with a specific IP address. Enter this into the Apply a display filter... text box immediately above the list of packets:
@@ -85,13 +86,22 @@ This opens a packet details pane window:
 
 ## Task 3: Use Filters to Select Packets
 In this task, you’ll use filters to analyze specific network packets based on where the packets came from or where they were sent to. You’ll explore how to select packets using either their physical Ethernet Media Access Control (MAC) address or their Internet Protocol (IP) address.
+
+
+Enter the following filter to select traffic to or from a specific Ethernet MAC address. This filters traffic related to one MAC address, regardless of the other protocols involved:
+
+eth.addr == 42:01:ac:15:e0:02
+
+![Explore Wireshark](https://i.imgur.com/0VKEq7N.png)
+![Explore Wireshark](https://i.imgur.com/16EoTR3.jpeg)
+
 **Question:** What is the protocol contained in the Internet Protocol Version 4 subtree from the first packet related to MAC address 42:01:ac:15:e0:02? 
 
 - **Options:**
   - UDP
-  - ICMP ✅
+  - ICMP 
   - ESP
-  - TCP
+  - TCP✅
 
 ---
 
