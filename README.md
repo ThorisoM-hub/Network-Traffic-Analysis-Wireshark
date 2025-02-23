@@ -93,7 +93,7 @@ Enter the following filter to select traffic to or from a specific Ethernet MAC 
 eth.addr == 42:01:ac:15:e0:02
 
 ![Explore Wireshark](https://i.imgur.com/0VKEq7N.png)
-![Explore Wireshark](https://i.imgur.com/16EoTR3.jpeg)
+![Explore Wireshark](https://i.imgur.com/7HxnPjt.jpeg)
 
 **Question:** What is the protocol contained in the Internet Protocol Version 4 subtree from the first packet related to MAC address 42:01:ac:15:e0:02? 
 
