@@ -107,7 +107,16 @@ eth.addr == 42:01:ac:15:e0:02
 
 ## Task 4: Use Filters to Explore DNS Packets
 In this task, you’ll use filters to select and examine DNS traffic. Once you‘ve selected sample DNS traffic, you’ll drill down into the protocol to examine how the DNS packet data contains both queries (names of internet sites that are being looked up) and answers (IP addresses that are being sent back by a DNS server when a name is successfully resolved).
+
+Enter this into the Apply a display filter... text box immediately above the list of packets:
+
+udp.port == 53
+
+![Explore Wireshark](https://i.imgur.com/5KZiaMT.png)
+
 **Question:** Which of these IP addresses is displayed in the expanded Answers section for the DNS query for "opensource.google.com"? 
+Enter the following filter to select UDP port 53 traffic. DNS traffic uses UDP port 53, so this will list traffic related to DNS queries and responses only. 
+The Answers data includes the name that was queried (opensource.google.com) and the addresses that are associated with that name.
 
 - **Options:**
   - 142.250.1.139 ✅
