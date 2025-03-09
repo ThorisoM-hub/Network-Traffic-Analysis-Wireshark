@@ -128,28 +128,34 @@ The Answers data includes the name that was queried (opensource.google.com) and 
 
 ## Task 5: Use Filters to Explore TCP Packets
 In this task, you’ll use additional filters to select and examine TCP packets. You’ll learn how to search for text that is present in payload data contained inside network packets. This will locate packets based on something such as a name or some other text that is of interest to you.
+
+Tcp.port==80
+
+![Explore Wireshark](https://i.imgur.com/ONHC5uN.png)
+
 **Question:** What is the Time to Live value of the packet as specified in the Internet Protocol Version 4 subtree? 
 
 - **Options:**
-  - 128 ✅
-  - 64
+  - 128 
+  - 64✅
   - 16
   - 32
 
 ---
 
 **Question:** What is the Frame Length of the packet as specified in the Frame subtree? 
+![Explore Wireshark](https://i.imgur.com/4OHcxdf.png)
 
 - **Options:**
   - 40 bytes
-  - 54 bytes
-  - 74 bytes ✅
+  - 54 bytes✅
+  - 74 bytes 
   - 60 bytes
 
 ---
 
 **Question:** What is the Header Length of the packet as specified in the Internet Protocol Version 4 subtree? 
-
+![Explore Wireshark](https://i.imgur.com/4Ytp2yQ.png)
 - **Options:**
   - 20 bytes ✅
   - 54 bytes
@@ -159,13 +165,13 @@ In this task, you’ll use additional filters to select and examine TCP packets.
 ---
 
 **Question:** What is the Destination Address as specified in the Internet Protocol Version 4 subtree? 
+![Explore Wireshark](https://i.imgur.com/6KsynZi.png)
 
 - **Options:**
-  - 169.254.169.254
+  - 169.254.169.254✅
   - 239.1.250.142
   - 172.21.224.2
-  - 142.250.1.139 ✅
-Here's a conclusion for your **"Analyze Your First Packet with Wireshark"** lab project:  
+  - 142.250.1.139  
 
 ---
 
